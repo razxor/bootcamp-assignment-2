@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2: Food-Related Website | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- custom -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>  
+</head>
+
+<body>
+  <div class="navbar bg-base-100 sticky top-0 z-10">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0"
+          class="menu  menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold text-xl">
+          <li><a>Potato</a></li>
+          <li><a>Soup</a></li>
+          <li><a>Chicken</a></li>
+          <li><a>Beef</a></li>
+        </ul>
+      </div>
+      <a class="cursor-pointer text-xl" href="/">
+        <img src="/images/logo.png" alt="Logo" width="180">
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 font-bold text-xl">
+        <li><a href="?Potato" id="potatoLink">Potato</a></li>
+        <li><a href="?Soup" id="soupLink">Soup</a></li>
+        <li><a href="?Chicken" id="chikenLink">Chicken</a></li>
+        <li><a href="?Beef" id="beefLink">Beef</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- bannar -->
+  <section id="bannar">
+    <div class="carousel w-full h-screen">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero" style="background-image: url(images/carousel/1.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center py-20">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Farm to Table Fresh</h1>
+              <p class="mb-5">
+                Our ingredients are sourced locally for the freshest dining experience.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero" style="background-image: url(images/carousel/4.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center py-20">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Savor Every Bite</h1>
+              <p class="mb-5">
+                Indulge in our chef-crafted dishes, made with love and care.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!--  -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero" style="background-image: url(images/carousel/2.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center py-20">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Delight Your Taste Buds</h1>
+              <p class="mb-5">
+                Fresh ingredients, bold flavors—discover a taste sensation today!
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="hero" style="background-image: url(images/carousel/6.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center py-20">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Tasty, Fresh & Fast</h1>
+              <p class="mb-5">
+                Get your favorite meals delivered hot and fresh in just minutes.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="product" class="px-6">
+    <div class="text-center py-6">
+      <h1 class="text-6xl font-bold">Food</h1>
+      <p>20% off all orders this weekend only—don’t miss out!</p>
+    </div>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="mealsContainer">
+
+    </div>
+  </section>
+</body>
+
+</html>
