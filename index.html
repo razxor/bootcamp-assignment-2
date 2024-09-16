@@ -16,7 +16,7 @@
 <body>
   <header class="sticky top-0 z-10">
     <div class="navbar bg-base-100">
-      <div class="navbar-start">
+      <div class="navbar-start w-full md:w-1/2">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -26,22 +26,27 @@
           </div>
           <ul tabindex="0"
             class="menu  menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold text-xl">
-            <li><a>Potato</a></li>
-            <li><a>Soup</a></li>
-            <li><a>Chicken</a></li>
-            <li><a>Beef</a></li>
+            <li><a href="?Potato" class="potatoLink">Potato</a></li>
+            <li><a href="?Soup" class="soupLink">Soup</a></li>
+            <li><a href="?Chicken" class="chikenLink">Chicken</a></li>
+            <li><a href="?Beef" class="beefLink">Beef</a></li>
           </ul>
         </div>
-        <a class="cursor-pointer text-xl" href="/">
-          <img src="/images/logo.png" alt="Logo" width="180" height="30">
-        </a>
+        <div class="flex justify-center items-center">
+          <a class="cursor-pointer text-xl" href="/">
+            <img src="/images/logo.png" alt="Logo" width="180" height="30">
+          </a>
+          <!-- <span class="font-bold text-2xl md:text-4xl">
+            Vegan Food
+          </span> -->
+        </div>        
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 font-bold text-xl">
-          <li><a href="?Potato" id="potatoLink">Potato</a></li>
-          <li><a href="?Soup" id="soupLink">Soup</a></li>
-          <li><a href="?Chicken" id="chikenLink">Chicken</a></li>
-          <li><a href="?Beef" id="beefLink">Beef</a></li>
+          <li><a href="?Potato" class="potatoLink">Potato</a></li>
+          <li><a href="?Soup" class="soupLink">Soup</a></li>
+          <li><a href="?Chicken" class="chikenLink">Chicken</a></li>
+          <li><a href="?Beef" class="beefLink">Beef</a></li>
         </ul>
       </div>
     </div>
@@ -49,13 +54,13 @@
 
   <!-- bannar -->
   <section id="bannar">
-    <div class="carousel w-full h-screen">
+    <div class="carousel w-full md:h-screen">
       <div id="slide1" class="carousel-item relative w-full">
         <div class="hero" style="background-image: url(images/carousel/1.jpg);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center py-20">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Farm to Table Fresh</h1>
+            <div class="w-full">
+              <h1 class="mb-5 text-4xl sm:text-4xl md:text-6xl lg:text-8xl font-bold">Farm to Table Fresh</h1>
               <p class="mb-5">
                 Our ingredients are sourced locally for the freshest dining experience.
               </p>
@@ -73,8 +78,8 @@
         <div class="hero" style="background-image: url(images/carousel/4.jpg);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center py-20">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Savor Every Bite</h1>
+            <div class="w-full">
+              <h1 class="mb-5 text-4xl md:text-6xl lg:text-8xl font-bold">Savor Every Bite</h1>
               <p class="mb-5">
                 Indulge in our chef-crafted dishes, made with love and care.
               </p>
@@ -92,8 +97,8 @@
         <div class="hero" style="background-image: url(images/carousel/2.jpg);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center py-20">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Delight Your Taste Buds</h1>
+            <div class="w-full">
+              <h1 class="mb-5 text-4xl md:text-6xl lg:text-8xl font-bold">Delight Your Taste Buds</h1>
               <p class="mb-5">
                 Fresh ingredients, bold flavors—discover a taste sensation today!
               </p>
@@ -110,8 +115,8 @@
         <div class="hero" style="background-image: url(images/carousel/6.jpg);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center py-20">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Tasty, Fresh & Fast</h1>
+            <div class="w-full">
+              <h1 class="mb-5 text-4xl md:text-6xl lg:text-8xl font-bold">Tasty, Fresh & Fast</h1>
               <p class="mb-5">
                 Get your favorite meals delivered hot and fresh in just minutes.
               </p>
@@ -138,36 +143,39 @@
     </div>
   </section>
 
-  <section id="faq" class="px-10 w-full">
+  <section id="faq" class="px-2 md:px-10 w-full">
     <div class="text-center py-12">
       <h1 class="text-6xl font-bold">FAQ</h1>
       <p>Get you answer without asking!</p>
     </div>
-    <div class="w-5/6 mx-auto">
-      <div class="join join-vertical w-full">
+    <div class="sm:w-full md:w-5/6 mx-auto">
+      <div class="join join-vertical w-full rounded">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
           <div class="collapse-title text-xl font-medium">What is the best way to store fresh produce?</div>
           <div class="collapse-content">
-            <p>To keep your produce fresh, store it in a cool, dry place, and avoid washing fruits and vegetables before storing them. Refrigerate leafy greens and berries to extend their freshness.</p>
+            <p>To keep your produce fresh, store it in a cool, dry place, and avoid washing fruits and vegetables before
+              storing them. Refrigerate leafy greens and berries to extend their freshness.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">How do I know if meat is properly cooked?</div>
           <div class="collapse-content">
-            <p>Use a meat thermometer to check the internal temperature. Poultry should reach 165°F (75°C), and most meats like beef and pork should be cooked to at least 145°F (63°C).</p>
+            <p>Use a meat thermometer to check the internal temperature. Poultry should reach 165°F (75°C), and most
+              meats like beef and pork should be cooked to at least 145°F (63°C).</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">What are some quick and healthy meal options?</div>
           <div class="collapse-content">
-            <p>Some quick and healthy meals include salads with lean proteins, stir-fried vegetables with tofu or chicken, and whole grain wraps with plenty of fresh vegetables and hummus.</p>
+            <p>Some quick and healthy meals include salads with lean proteins, stir-fried vegetables with tofu or
+              chicken, and whole grain wraps with plenty of fresh vegetables and hummus.</p>
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
 

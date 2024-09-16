@@ -3,17 +3,22 @@ window.addEventListener('DOMContentLoaded',function () {
 let cat = "Potato";
 cat = location.search.split('?').pop();
 
-if(cat == 'Potato'){     
-    document.getElementById("potatoLink").classList.add('active');
-} else if (cat=='Soup') {
-    document.getElementById("soupLink").classList.add('active');
+if(cat == 'Potato'){         
+    let divs = document.querySelectorAll('.potatoLink');
+    divs.forEach(div => div.classList.add('active'));
+} else if (cat=='Soup') {    
+    let divs = document.querySelectorAll('.soupLink');
+    divs.forEach(div => div.classList.add('active'));
 }
-else if (cat=='Chicken') {
-    document.getElementById("chikenLink").classList.add('active');
-} else if (cat=='Beef'){
-    document.getElementById("beefLink").classList.add('active');
-} else {
-    document.getElementById("potatoLink").classList.add('active');
+else if (cat=='Chicken') {    
+    let divs = document.querySelectorAll('.chikenLink');
+    divs.forEach(div => div.classList.add('active'));
+} else if (cat=='Beef'){    
+    let divs = document.querySelectorAll('.beefLink');
+    divs.forEach(div => div.classList.add('active'));
+} else {    
+    let divs = document.querySelectorAll('.potatoLink');
+    divs.forEach(div => div.classList.add('active'));
 }
 //console.log(cat);
 fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${cat}`)
