@@ -24,4 +24,4 @@ Vegan Food is a web-based platform that promotes plant-based eating by showcasin
 - JavaScript
 
 ## Live Link
-You can check out the live version of the website here: [https://razxor.github.io/bootcamp-assignment-2/](#)
+You can check out the live version of the website here: [Vegan Food Website](https://razxor.github.io/bootcamp-assignment-2/)
